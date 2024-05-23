@@ -149,3 +149,5 @@ Snakemake/
 │  ├─ README
 │  ├─ logs
 ````
+## Overvieuw of Illumina pipeline
+![A DAG of the illumina pipeline in snakemake](dag.png "DAG of the Illumina pipeline")
