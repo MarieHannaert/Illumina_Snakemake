@@ -4,7 +4,7 @@ CONDITIONS = ["1", "2"]
 
 # Define directories
 REFDIR = os.getcwd()
-print(REFDIR)
+
 sample_dir = REFDIR+"/data/samples"
 
 sample_names = []
@@ -14,7 +14,7 @@ for i in range(len(sample_list)):
     if sample.endswith("_1.fq.gz"):
         samples = sample.split("_1.fq")[0]
         sample_names.append(samples)
-        print(sample_names)
+       
 
 rule all:
     input:
