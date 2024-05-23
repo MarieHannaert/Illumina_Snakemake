@@ -65,7 +65,7 @@ rule Kraken2:
     output:
         "results/02_kraken2/{names}_{con}_kraken2.report"
     params:
-        threads=16
+        threads=8
     log:
         "logs/Kraken2_{names}_{con}.log"
     shell:
@@ -79,7 +79,7 @@ rule Krona:
     output:
         "results/03_krona/{names}_{con}_krona.html"
     params:
-        extra="-t 5 -m 3"
+        extra="-t 32 -m 3"
     log:
         "logs/Krona_{names}_{con}.log"
     conda:
@@ -99,7 +99,7 @@ rule Fastp:
         html = "results/04_fastp/{names}_fastp.html",
         json = "results/04_fastp/{names}_fastp.json"
     params:
-        extra="-w 32"
+        extra="-w 16"
     log:
         "logs/fastp_{names}.log"
     shell:
@@ -116,7 +116,7 @@ rule shovill:
         result = directory("results/05_shovill/{names}/")
         
     params:
-        extra = "--cpus 16 --ram 16 --minlen 500 --trim"
+        extra = "--cpus 32 --ram 16 --minlen 500 --trim"
     log:
         "logs/shovill_{names}.log"
     conda:
@@ -142,7 +142,7 @@ rule skani:
     output:
         result = "results/06_skani/skani_results_file.txt"
     params:
-        extra = "-t 24 -n 1"
+        extra = "-t 32 -n 1"
     log:
         "logs/skani.log"
     conda:
