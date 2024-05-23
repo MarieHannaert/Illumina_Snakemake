@@ -70,8 +70,7 @@ If this is done there is one more important step left:
 #### Activation of Krona 
 To install the local taxonomy database you must run the following commands: 
 ````
-$ cd .snakemake/conda/cce02dcec3898e2025b146bc478991b8/opt/krona/updateTaxonomy.sh
-$ bash updateTaxonomy.sh
+$ bash .snakemake/conda/cce02dcec3898e2025b146bc478991b8/opt/krona/updateTaxonomy.sh
 ````
 Before you can do/find this you will probably first have to execute the snakemake one time. This is needed because then it will install the needed conda enviroments. So if you get an error don't panic, this is normal by the first execution. This info can be found on: [KronaTools](https://github.com/marbl/Krona/wiki/Installing)
 
