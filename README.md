@@ -120,7 +120,7 @@ Based on evolutionarily-informed expectations of gene content of near-universal 
 The output of Busco is a directory for each sample. To make it more visible, there will be made a summary graph per fifteteen samples. 
 
 If you want to know more about busco: [Busco](https://busco.ezlab.org/)
-## Finish
+## Finnish
 When your done executing the pipeline you will find the following structure in you **Illumina_Snakemake/**:
 ````
 Snakemake/
@@ -148,3 +148,5 @@ Snakemake/
 │  ├─ README
 │  ├─ logs
 ````
+## Overview of Illumina pipeline
+![A DAG of the illumina pipeline in snakemake](dag.png "DAG of the Illumina pipeline")
