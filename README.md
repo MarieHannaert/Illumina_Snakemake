@@ -3,7 +3,7 @@ Marie Hannaert\
 ILVO
 
 Illumina pipeline is a pipeline to analyze short-reads from Illumina.
-This repository is a snakemake workflow that can be used to analyze short-read data specific for . Everything needed can be found in this repository. I made this pipeline during my traineeship by ILVO-Plant. 
+This repository is a snakemake workflow that can be used to analyze short-read data specific for bacterial genomes. Everything needed can be found in this repository. I made this pipeline during my traineeship by ILVO-Plant. 
 
 ## Installing the Illumina pipeline
 Snakemake is a workflow management system that helps to create and execute data processing pipelines. It requires Python 3 and can be most easily installed via the bioconda package.
