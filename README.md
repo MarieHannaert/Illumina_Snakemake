@@ -86,6 +86,13 @@ $ bash .snakemake/conda/cce02dcec3898e2025b146bc478991b8/opt/krona/updateTaxonom
 
 Before you can do/find this you will probably first have to execute the snakemake one time. This is needed because then it will install the needed conda enviroments. So if you get an error don't panic, this is normal by the first execution. This info can be found on: [KronaTools](https://github.com/marbl/Krona/wiki/Installing)
 
+#### Making scripts executable 
+To make the scripts executable you need to run the following command in the **Snakemake/Illumina_Snakemake/** :
+````
+$ chmod +x scripts/*
+````
+This is needed because otherwise the scripts that are used in the pipeline cannot be executed. 
+
 ## Executing the Illumina pipeline
 Now everything is ready to run the pipeline. 
 If you want to run the pipeline without any output, just checking it it works, you can use the following command in the **Illumina_Snakemake/**: 
