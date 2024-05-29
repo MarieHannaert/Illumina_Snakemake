@@ -131,6 +131,7 @@ Snakemake/
 |  ├─ envs
 |  ├─ scripts/
 |  |  ├─beeswarm_vis_assemblies.R
+|  |  ├─busco_summary.sh
 |  |  ├─skani_quast_to_xlsx.py
 |  ├─ Snakefile
 │  ├─ results/
