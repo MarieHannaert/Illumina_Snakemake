@@ -43,7 +43,6 @@ $ snakemake --help
 ````
 To check the documentation of Snakemake you can use the following link: [Snakemake](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html)
 
-Now the snakemake enviroment is ready for use with the pipeline. 
 
 ### Downloading the Illumina pipeline from Github
 When you want to use the Illumina pipeline, you can download the complete pipeline, including: scripts, conda enviroments, ... on your own local maching. Good practise is to make a directory **Snakemake/** where you can collect all of your pipelines. Downloading the Illumina pipeline in your snakemake directory can be done by the following command: 
@@ -51,7 +50,18 @@ When you want to use the Illumina pipeline, you can download the complete pipeli
 $ cd Snakemake/ 
 $ git clone https://github.com/MarieHannaert/Illumina_Snakemake.git
 ````
+### Making a database for Kraken2
+For Kraken2 you need to make a database. The database that is used in my pipeline is [Standard database](https://benlangmead.github.io/aws-indexes/k2). 
+After downloading you need to specify the path to this database. This can be done in the **Snakemake/Illumina_Snakemake/Snakefile**, line 73.
 
+### Making the database that is used for skANI
+For using skANI you need to have a database, you can create one according to the following link: 
+[Creating a database for skANI](https://github.com/bluenote-1577/skani/wiki/Tutorial:-setting-up-the-GTDB-genome-database-to-search-against)
+
+When your database is installed you need to changed this path to the database in the Snakefile **Snakemake/Illumina_Snakemake/Snakefile**, line 152. 
+
+
+Now the snakemake enviroment is ready for use with the pipeline. 
 ## Executing the Illumina pipeline 
 Before you can execute this pipeline you need to perform a couple of preparing steps. 
 ### Preparing
