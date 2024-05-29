@@ -82,6 +82,8 @@ To install the local taxonomy database you must run the following commands:
 ````
 $ bash .snakemake/conda/cce02dcec3898e2025b146bc478991b8/opt/krona/updateTaxonomy.sh
 ````
+!The number of the conda enviroment can differ from the one above, you need to check this will you do the installation!
+
 Before you can do/find this you will probably first have to execute the snakemake one time. This is needed because then it will install the needed conda enviroments. So if you get an error don't panic, this is normal by the first execution. This info can be found on: [KronaTools](https://github.com/marbl/Krona/wiki/Installing)
 
 ## Executing the Illumina pipeline
