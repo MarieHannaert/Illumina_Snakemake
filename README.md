@@ -150,7 +150,7 @@ Based on evolutionarily-informed expectations of gene content of near-universal 
 The output of Busco is a directory for each sample. To make it more visible, there will be made a summary graph per fifteteen samples. 
 
 Busco documentation: [Busco](https://busco.ezlab.org/)
-## Finnish
+## Finish
 When your done executing the pipeline you will find the following structure in you **Illumina_Snakemake/**:
 ````
 Snakemake/
