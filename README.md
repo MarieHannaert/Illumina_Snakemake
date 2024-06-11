@@ -45,7 +45,7 @@ To check the documentation of Snakemake you can use the following link: [Snakema
 
 
 ### Downloading the Illumina pipeline from Github
-When you want to use the Illumina pipeline, you can download the complete pipeline, including: scripts, conda enviroments, ... on your own local maching. Good practise is to make a directory **Snakemake/** where you can collect all of your pipelines. Downloading the Illumina pipeline in your snakemake directory can be done by the following command: 
+When you want to use the Illumina pipeline, you can download the complete pipeline, including: scripts, conda enviroments, ... on your own local machine. Good practise is to make a directory **Snakemake/** where you can collect all of your pipelines. Downloading the Illumina pipeline in your snakemake directory can be done by the following command: 
 ````
 $ cd Snakemake/ 
 $ git clone https://github.com/MarieHannaert/Illumina_Snakemake.git

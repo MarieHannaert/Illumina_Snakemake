@@ -78,7 +78,7 @@ rule Krona:
     output:
         "results/03_krona/{names}_{con}_krona.html"
     params:
-        extra="-t 32 -m 3"
+        extra="-t 5 -m 3"
     log:
         "logs/Krona_{names}_{con}.log"
     conda:
